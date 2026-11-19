@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+ <title>MaiChat — A world of your own</title>
+ <link rel="preload" href="/assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+ <link rel="stylesheet" href="/src/tokens/material-tokens.css">
+ <link rel="stylesheet" href="/src/tokens/generated-scheme.css">
+ <link rel="stylesheet" href="/src/tokens/theme.css">
+ <link rel="stylesheet" href="/src/layouts/shell.css">
+ <link rel="stylesheet" href="/src/components/controls.css">
+ <link rel="stylesheet" href="/src/components/portfolio.css">
+ <meta name="description" content="Your characters, your AI, your next great story. Explore MaiChat, the customizable AI roleplay app for Android, built with Flutter.">
+ <link rel="canonical" href="https://maichat.me/">
+ <meta name="theme-color" content="#fff7fc">
+ <meta name="theme-color" content="#151216" media="(prefers-color-scheme: dark)">
+ <meta name="color-scheme" content="light dark">
+ <meta name="referrer" content="strict-origin-when-cross-origin">
+ <link rel="icon" href="/assets/images/maichat-mark.svg" type="image/svg+xml">
+ <link rel="manifest" href="/manifest.webmanifest">
+ <meta property="og:type" content="website">
+ <meta property="og:site_name" content="MaiChat">
+ <meta property="og:title" content="MaiChat — A world of your own">
+ <meta property="og:description" content="Your characters, your AI, your next great story. A customizable AI roleplay app for Android.">
+ <meta property="og:url" content="https://maichat.me/">
+ <meta property="og:image" content="https://maichat.me/assets/images/readme-header.png">
+ <meta property="og:image:width" content="4620">
+ <meta property="og:image:height" content="2596">
+ <meta property="og:image:alt" content="MaiChat's original purple brand artwork">
+ <meta name="twitter:card" content="summary_large_image">
+ <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"MaiChat","applicationCategory":"EntertainmentApplication","operatingSystem":"Android","url":"https://maichat.me/","description":"A universal AI roleplay harness for Android, built with Flutter.","downloadUrl":"https://maichat.me/release/","isAccessibleForFree":true}</script>
+ <script type="module" src="/src/lib/app.js"></script>
+</head>
+<body>
+ {{header}}
+ <main id="main">
+  <section class="hero wrap" aria-labelledby="hero-title">
+   <div class="hero-copy">
+    <h1 id="hero-title">A world<br>of your<br>own.</h1>
+    <p class="hero-intro">Big ideas. Unexpected characters. Stories that go anywhere. Meet MaiChat, your AI roleplay playground for Android.</p>
+    <div class="button-row"><a class="button button--hero" href="/release/"><svg class="icon" aria-hidden="true"><use href="#icon-download"/></svg>Download for Android</a><a class="button button--text" href="#explore">Take a look around</a></div>
+    <p class="hero-note">Open source. Bring your own AI provider.</p>
+   </div>
+   <div class="hero-art">
+    <div class="hero-flower" aria-hidden="true"></div>
+    <div class="art-spark" aria-hidden="true"><svg class="icon"><use href="#icon-spark"/></svg></div>
+    <div class="phone hero-phone"><img src="/assets/images/chat-720.webp" srcset="/assets/images/chat-240.webp 240w, /assets/images/chat-320.webp 320w, /assets/images/chat-480.webp 480w, /assets/images/chat-720.webp 720w, /assets/images/chat-1440.webp 1440w" sizes="(min-width: 840px) 270px, 235px" width="1440" height="3120" alt="A roleplay conversation in the MaiChat Android app" fetchpriority="high"></div>
+    <span class="art-orbit"><svg class="icon" aria-hidden="true"><use href="#icon-spark"/></svg>Let your imagination play.</span>
+    <span class="hero-dot" aria-hidden="true"></span>
+   </div>
+  </section>
+  <div class="intro-band wrap"><span><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg>Your characters</span><span><svg class="icon" aria-hidden="true"><use href="#icon-spark"/></svg>Your choice of AI</span><span><svg class="icon" aria-hidden="true"><use href="#icon-grid"/></svg>Your kind of space</span></div>
+  <section class="section wrap" id="explore" aria-labelledby="explore-title">
+   <div class="section-heading"><h2 id="explore-title">A little curiosity.<br>Endless possibilities.</h2><p>From the first “hello” to a whole new universe, make yourself at home.</p></div>
+   <div class="showcase" data-tabs>
+    <div class="feature-tabs" role="tablist" aria-label="Explore MaiChat features">
+     <button type="button" class="feature-tab" role="tab" id="tab-chat" aria-controls="panel-chat" aria-selected="true" tabindex="0"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg><span class="tab-label">Chat</span></button>
+     <button type="button" class="feature-tab" role="tab" id="tab-create" aria-controls="panel-create" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="#icon-spark"/></svg><span class="tab-label">Create</span></button>
+     <button type="button" class="feature-tab" role="tab" id="tab-discover" aria-controls="panel-discover" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="#icon-explore"/></svg><span class="tab-label">Discover</span></button>
+     <button type="button" class="feature-tab" role="tab" id="tab-home" aria-controls="panel-home" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="#icon-grid"/></svg><span class="tab-label">Your space</span></button>
+    </div>
+    <div class="feature-panel" role="tabpanel" id="panel-chat" aria-labelledby="tab-chat" tabindex="0">
+     <div class="feature-copy"><h3>Good stories start with a conversation.</h3><p>Step into character and see where the chat takes you. Shape the scene with characters, lorebooks, and scenarios that make it yours.</p><ul class="feature-list"><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Connect the AI providers you choose</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Keep your world in character with lorebooks</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Take a side conversation with /btw</li></ul></div>
+     <div class="feature-stage"><div class="stage-decoration" aria-hidden="true"></div><div class="stage-symbol" aria-hidden="true"><svg class="icon"><use href="#icon-spark"/></svg></div><div class="phone"><img src="/assets/images/chat-720.webp" srcset="/assets/images/chat-240.webp 240w, /assets/images/chat-320.webp 320w, /assets/images/chat-480.webp 480w, /assets/images/chat-720.webp 720w, /assets/images/chat-1440.webp 1440w" sizes="(min-width: 840px) 270px, 235px" width="1440" height="3120" alt="MaiChat conversation with character and chat controls" loading="lazy"></div></div>
+    </div>
+    <div class="feature-panel" role="tabpanel" id="panel-create" aria-labelledby="tab-create" tabindex="0" hidden>
+     <div class="feature-copy"><h3>Your next character is an idea away.</h3><p>Give a spark of an idea somewhere to grow. Studio brings AI assistance into the creative process, helping you build characters and the worlds around them.</p><ul class="feature-list"><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Create with the agentic Studio</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Develop characters, lore, and scenarios</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Keep control of the details</li></ul></div>
+     <div class="feature-stage feature-stage--studio"><div class="stage-decoration" aria-hidden="true"></div><div class="stage-symbol" aria-hidden="true"><svg class="icon"><use href="#icon-spark"/></svg></div><div class="phone"><img src="/assets/images/studio-720.webp" srcset="/assets/images/studio-240.webp 240w, /assets/images/studio-320.webp 320w, /assets/images/studio-480.webp 480w, /assets/images/studio-720.webp 720w, /assets/images/studio-1440.webp 1440w" sizes="(min-width: 840px) 270px, 235px" width="1440" height="3120" alt="MaiChat Studio, the AI assisted character creation workspace" loading="lazy"></div></div>
+    </div>
+    <div class="feature-panel" role="tabpanel" id="panel-discover" aria-labelledby="tab-discover" tabindex="0" hidden>
+     <div class="feature-copy"><h3>Meet your next plot twist.</h3><p>Find a character that catches your eye. Browse Discover and import compatible characters, then bring your favorites into your own stories.</p><ul class="feature-list"><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Explore characters through Discover</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Import compatible character cards</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Bring content from ST, Agnai, and Risu</li></ul></div>
+     <div class="feature-stage feature-stage--discover"><div class="stage-decoration" aria-hidden="true"></div><div class="stage-symbol" aria-hidden="true"><svg class="icon"><use href="#icon-spark"/></svg></div><div class="phone"><img src="/assets/images/discover-720.webp" srcset="/assets/images/discover-240.webp 240w, /assets/images/discover-320.webp 320w, /assets/images/discover-480.webp 480w, /assets/images/discover-720.webp 720w, /assets/images/discover-1440.webp 1440w" sizes="(min-width: 840px) 270px, 235px" width="1440" height="3120" alt="The Discover screen in MaiChat for browsing and importing characters" loading="lazy"></div></div>
+    </div>
+    <div class="feature-panel" role="tabpanel" id="panel-home" aria-labelledby="tab-home" tabindex="0" hidden>
+     <div class="feature-copy"><h3>A place that feels like you.</h3><p>Your favorite characters, your colors, your own little corner of the internet. Personalize your Home and keep the things you love close.</p><ul class="feature-list"><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Make your Home your own</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Personalize themes and chat backgrounds</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>Keep images together in your gallery</li></ul></div>
+     <div class="feature-stage feature-stage--home"><div class="stage-decoration" aria-hidden="true"></div><div class="stage-symbol" aria-hidden="true"><svg class="icon"><use href="#icon-spark"/></svg></div><div class="phone"><img src="/assets/images/home-720.webp" srcset="/assets/images/home-240.webp 240w, /assets/images/home-320.webp 320w, /assets/images/home-480.webp 480w, /assets/images/home-720.webp 720w, /assets/images/home-1440.webp 1440w" sizes="(min-width: 840px) 270px, 235px" width="1440" height="3120" alt="MaiChat's customizable Home screen with characters and recent conversations" loading="lazy"></div></div>
+    </div>
+    <p class="feature-caption">A look inside the Android app. Your theme and content make it your own.</p>
+   </div>
+   <div class="possibilities">
+    <article class="possibility"><span class="possibility-mark" aria-hidden="true"><svg class="icon"><use href="#icon-spark"/></svg></span><h3>Many models.<br>One happy place.</h3><p>Connect your preferred providers and endpoints. Your AI setup comes along for the story.</p></article>
+    <article class="possibility"><span class="possibility-mark" aria-hidden="true"><svg class="icon"><use href="#icon-chat"/></svg></span><h3>A quick aside?<br>Just say /btw.</h3><p>Start a side conversation without leaving the flow of your main chat.</p></article>
+    <article class="possibility"><span class="possibility-mark" aria-hidden="true"><svg class="icon"><use href="#icon-explore"/></svg></span><h3>Bring your<br>worlds with you.</h3><p>Import compatible SillyTavern, Agnai, and Risu content to make your existing ideas feel at home.</p></article>
+   </div>
+  </section>
+  <section class="section wrap faq-layout" id="questions" aria-labelledby="questions-title">
+   <div class="faq-heading"><h2 id="questions-title">A few things<br>you might<br>be wondering.</h2><p>A little more about getting started with MaiChat.</p></div>
+   <div class="accordion">
+    <details><summary>What is MaiChat?</summary><p>MaiChat is an open source AI roleplay app for Android, built with Flutter. It brings conversations, characters, lorebooks, scenarios, and creative tools together in one customizable app.</p></details>
+    <details><summary>Do I need my own AI provider?</summary><p>Yes. MaiChat connects to providers you configure. Add your preferred provider and API key or endpoint in the app. Provider pricing, availability, and account requirements vary.</p></details>
+    <details><summary>Can I bring my existing characters?</summary><p>MaiChat can import compatible character cards and content from SillyTavern, Agnai, and Risu. Support depends on the file format and content, so keep a copy of your originals.</p></details>
+    <details><summary>How do I install it on Android?</summary><p>Download the APK from our download page, open the file on your Android device, and follow the system's installation prompts. That page also has step by step instructions.</p></details>
+    <details><summary>Is the app free?</summary><p>MaiChat is free and open source. AI requests use your configured provider, which may charge separately according to its own pricing.</p></details>
+   </div>
+  </section>
+  <section class="closing wrap" aria-labelledby="closing-title"><div class="closing-decoration" aria-hidden="true"></div><div><h2 id="closing-title">Your next story<br>starts here.</h2><p>Pick a character. Bring your AI. See what happens.</p></div><a class="button button--hero" href="/release/"><svg class="icon" aria-hidden="true"><use href="#icon-download"/></svg>Get MaiChat for Android</a></section>
+ </main>
+ {{footer}}
+</body>
+</html>

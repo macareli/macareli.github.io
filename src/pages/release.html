@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+ <title>Download MaiChat for Android</title>
+ <link rel="preload" href="/assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+ <link rel="stylesheet" href="/src/tokens/material-tokens.css">
+ <link rel="stylesheet" href="/src/tokens/generated-scheme.css">
+ <link rel="stylesheet" href="/src/tokens/theme.css">
+ <link rel="stylesheet" href="/src/layouts/shell.css">
+ <link rel="stylesheet" href="/src/components/controls.css">
+ <link rel="stylesheet" href="/src/components/release.css">
+ <meta name="description" content="Download the latest MaiChat Android APK directly from maichat.me. Find release notes, installation instructions, and a file checksum.">
+ <link rel="canonical" href="https://maichat.me/release/">
+ <meta name="theme-color" content="#fff7fc">
+ <meta name="theme-color" content="#151216" media="(prefers-color-scheme: dark)">
+ <meta name="color-scheme" content="light dark">
+ <meta name="referrer" content="strict-origin-when-cross-origin">
+ <link rel="icon" href="/assets/images/maichat-mark.svg" type="image/svg+xml">
+ <link rel="manifest" href="/manifest.webmanifest">
+ <meta property="og:type" content="website">
+ <meta property="og:site_name" content="MaiChat">
+ <meta property="og:title" content="Download MaiChat for Android">
+ <meta property="og:description" content="Get the MaiChat Android app, with release notes and installation instructions.">
+ <meta property="og:url" content="https://maichat.me/release/">
+ <meta property="og:image" content="https://maichat.me/assets/images/readme-header.png">
+ <meta property="og:image:width" content="4620">
+ <meta property="og:image:height" content="2596">
+ <meta property="og:image:alt" content="MaiChat's original purple brand artwork">
+ <meta name="twitter:card" content="summary_large_image">
+ <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"MaiChat","applicationCategory":"EntertainmentApplication","operatingSystem":"Android","url":"https://maichat.me/","description":"A universal AI roleplay harness for Android, built with Flutter.","downloadUrl":"https://maichat.me/release/","isAccessibleForFree":true}</script>
+ <script type="module" src="/src/lib/app.js"></script>
+</head>
+<body>
+ {{header}}
+ <main class="release-main wrap" id="main">
+  <div class="release-heading"><h1>A new story,<br>right in your pocket.</h1><p>Get MaiChat for Android and make room for your imagination.</p></div>
+  <div class="release-layout">
+   <section class="download-card" aria-labelledby="download-title"><div class="release-art" aria-hidden="true"></div>
+    <div class="release-app"><span class="brand-mark app-mark" aria-hidden="true"></span><div><h2 id="download-title">MaiChat for Android</h2><p>Latest public release</p></div></div>
+    <p class="release-version">{{release_version}}</p>
+    <div class="release-meta"><span>{{release_date}}</span><span>{{release_size}} · APK</span></div>
+    <a class="button button--hero" href="{{release_url}}" download="{{release_filename}}" data-download><svg class="icon" aria-hidden="true"><use href="#icon-download"/></svg>Download APK</a>
+    <p class="status" id="download-status" role="status" aria-live="polite">The Android app, directly from maichat.me.</p>
+    <p class="download-file">{{release_filename}}</p>
+   </section>
+   <section class="release-side" aria-labelledby="install-title"><h2 id="install-title">Make yourself at home.</h2><p>You’ll need an Android device and an AI provider of your choice. Install MaiChat, then add your provider in the app settings.</p>
+    <div class="accordion">
+     <details open><summary>How to install</summary><div class="detail-content"><ol class="install-steps"><li>Tap <strong>Download APK</strong> on your Android device.</li><li>Open the downloaded file from your browser or Files app.</li><li>If Android asks, allow your browser or file manager to install this app, then follow the installation prompts.</li><li>Open MaiChat and configure your AI provider to start chatting.</li></ol></div></details>
+     <details><summary>Updating an existing installation?</summary><p>Open the APK and follow Android’s update prompt. You can export a backup from MaiChat before updating. Android can update an existing app when the package and signing key match.</p></details>
+     <details><summary>Downloaded on your computer?</summary><p>Transfer the APK to your Android device, then open it with the Files app. MaiChat’s APK installs on Android; it does not run directly on your computer.</p></details>
+    </div>
+   </section>
+  </div>
+  <section class="release-details" aria-labelledby="notes-title"><h2 id="notes-title">What’s new</h2><div><div class="release-notes">{{release_notes}}</div><a class="source-link" href="{{release_source}}">View this release on GitHub</a><div class="checksum"><h3>Verify your download</h3><p>Compare this SHA-256 checksum with your downloaded file if you want to check its integrity.</p><code id="release-checksum">{{release_sha256}}</code><button class="button button--small button--tonal" type="button" data-copy-checksum>Copy checksum</button><p class="status" id="copy-status" role="status" aria-live="polite"></p></div></div></section>
+ </main>
+ {{footer}}
+</body>
+</html>

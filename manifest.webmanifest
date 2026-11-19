@@ -1,0 +1,9 @@
+{
+  "name": "MaiChat — AI roleplay for Android",
+  "short_name": "MaiChat",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#fff7fc",
+  "theme_color": "#462957",
+  "icons": [{"src": "/assets/images/maichat-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]
+}

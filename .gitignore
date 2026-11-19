@@ -1,0 +1,15 @@
+node_modules/
+_site/
+.cache/
+__pycache__/
+*.py[cod]
+*.apk
+*.part
+test-results/
+playwright-report/
+reports/**/*.png
+reports/**/*.html
+e2e-report/
+reports/**/*.json
+reports/**/*.yaml
+reports/**/*.mjs

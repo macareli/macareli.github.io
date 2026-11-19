@@ -1,0 +1,49 @@
+/* Brand samples from the original MaiChat README artwork. Generated roles
+   remain in generated-scheme.css; these named exceptions preserve the identity. */
+@font-face{font-family:Outfit;font-style:normal;font-weight:400 700;font-display:swap;src:url('/assets/fonts/outfit-latin.woff2') format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url('/assets/fonts/dm-sans-latin.woff2') format('woff2')}
+:root{
+ --md-sys-color-brand-plum:#462957;
+ --md-sys-color-brand-shape:#5E3775;
+ --md-sys-color-brand-lavender:#BDA5C7;
+ --md-sys-color-brand-lilac:#C5A4D6;
+ --md-sys-color-primary-container:var(--md-sys-color-brand-plum);
+ --md-sys-color-on-primary-container:var(--md-sys-color-brand-lavender);
+ --mc-hero-shape:var(--md-sys-color-brand-shape);
+ --mc-hero-accent:var(--md-sys-color-brand-lilac);
+ --mc-on-hero-accent:var(--md-sys-color-brand-plum);
+ --mc-page-surface:color-mix(in srgb,var(--md-sys-color-brand-lilac) 16%,var(--md-sys-color-surface-container-lowest));
+ --mc-stage-surface:color-mix(in srgb,var(--md-sys-color-brand-lilac) 35%,var(--md-sys-color-surface-container-lowest));
+ --mc-display-font:Outfit,'Arial Rounded MT Bold',sans-serif;
+ --mc-body-font:'DM Sans',sans-serif;
+ --md-sys-typescale-body-large-font:var(--mc-body-font);
+ --md-sys-typescale-body-medium-font:var(--mc-body-font);
+ --md-sys-typescale-label-large-font:var(--mc-body-font);
+ --md-sys-typescale-title-medium-font:var(--mc-display-font);
+ --md-sys-typescale-title-small-font:var(--mc-body-font);
+ --mc-type-hero:clamp(3.6rem,7.35vw,7.2rem);
+ --mc-type-section:clamp(2.5rem,4.7vw,4.75rem);
+ --mc-type-feature:clamp(2.25rem,3.5vw,3.75rem);
+ --mc-type-card:clamp(1.5rem,2.2vw,2.1rem);
+ --mc-type-lead:clamp(1.05rem,1.5vw,1.23rem);
+ --mc-type-small:.875rem;
+ --mc-type-logo:1.65rem;
+ --md-sys-typescale-footer-symbol-size:.65em;
+ --mc-type-footer:clamp(5rem,19vw,18rem);
+ --mc-section-space:clamp(4.5rem,9vw,8rem);
+ --mc-gutter:clamp(1rem,3.3vw,3rem);
+ --mc-content:80rem;
+ --md-sys-shape-corner-hero:clamp(2rem,4.2vw,4.5rem);
+ --mc-shape-clover:url('/assets/shapes/clover.svg');
+ --mc-shape-flower:url('/assets/shapes/flower.svg');
+ --md-sys-elevation-hero:0 24px 48px color-mix(in srgb,var(--md-sys-color-shadow) 24%,transparent);
+ color-scheme:light dark;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme='light']){--mc-page-surface:var(--md-sys-color-surface);--mc-stage-surface:var(--md-sys-color-surface-container-high)}}
+:root[data-theme='dark']{--mc-page-surface:var(--md-sys-color-surface);--mc-stage-surface:var(--md-sys-color-surface-container-high)}
+:root[data-theme='light']{color-scheme:light}
+:root[data-theme='dark']{color-scheme:dark}
+/* Generated dark selectors have greater specificity than :root. Keep the
+   exact original brand pair in both explicit and system dark modes. */
+:root[data-theme='dark']{--md-sys-color-primary-container:var(--md-sys-color-brand-plum);--md-sys-color-on-primary-container:var(--md-sys-color-brand-lavender)}
+@media(prefers-color-scheme:dark){:root:not([data-theme='light']){--md-sys-color-primary-container:var(--md-sys-color-brand-plum);--md-sys-color-on-primary-container:var(--md-sys-color-brand-lavender)}}
